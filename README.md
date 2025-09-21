@@ -225,15 +225,13 @@ chmod +x run.sh
 
 ## Exemplos Detalhados
 
-| Entrada (cliente) | Saída esperada (servidor) |
+| Entrada (cliente) | Saída (servidor)          |
 |-------------------|---------------------------|
-| `ADD 10 2`        | `OK 12`                  |
-| `SUB 7 9`         | `OK -2`                  |
-| `MUL -3 3.5`      | `OK -10.5`               |
+| `ADD 5 5`         | `OK 10`                  |
+| `SUB 1 2`         | `OK -1`                  |
+| `MUL -2 6`        | `OK -12`                 |
 | `DIV 5 0`         | `ERR EZDV divisao_por_zero` |
-| `10 + 2`          | `OK 12`                  |
+| `5 + 5`           | `OK 10`                  |
 | `10 / 4`          | `OK 2.5`                 |
-| `XYZ 1 2`         | `ERR EINV entrada_invalida` |
-| `QUIT`            | *(conexão encerrada)*    |
-
+| `SOMA 1 2`        | `ERR EINV entrada_invalida` |
 ---
